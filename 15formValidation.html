@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Form validation
+        </title>
+        <script>
+            function pass(){
+                var a=document.form1.text1.value;
+                var b=document.form1.pass1.value;
+                var c=document.form1.pass2.value;
+                var i=b.length
+                if(a=="")
+                {
+                    alert("you need to enter your name!")
+                }
+                else
+                {
+                    if(i<6)
+                    {
+                        alert("you need to enter 6 character!")
+                    }
+                    else
+                    {
+                        if(b!=c)
+                        {
+                            alert("password does not match")
+                        }
+                        else
+                        {
+                            alert("welcome")
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            Username: <input type="text" name="text1">
+            <br>
+            Password: <input type="password" name="pass1">
+            <br>
+            Confrim password: <input type="password" name="pass2">
+            <input type="submit" value="login" name="btn" onclick="pass()">
+        </form>
+    </body>
+</html>
