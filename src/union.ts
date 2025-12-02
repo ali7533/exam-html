@@ -9,3 +9,4 @@ function p(data:string | number | boolean):number{
     }
 }
 console.log(p(3))
+//new coomomafd
